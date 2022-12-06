@@ -14,7 +14,7 @@ console.log(splitSentence('foguete'));
 // Desafio 3 - Crie a função concatName
 
 
-const concatName = (array) => console.log(array.length -1 + ', ' + aray[0]);
+const concatName = (array) => console.log(array.length -1 + ', ' + array[0]);
 
 
 // Desafio 4 - Crie a função footballPoints
