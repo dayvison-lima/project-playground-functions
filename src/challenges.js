@@ -5,6 +5,12 @@ const compareTrue = (param1, param2) => param1 === true && param2 === true;
 
 // Desafio 2 - Crie a função splitSentence
 
+const splitSentence = (frase) => frase.split(" ");
+
+console.log(splitSentence('go Trybe'));
+console.log(splitSentence('Vamo que vamo'));
+console.log(splitSentence('foguete'));
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
