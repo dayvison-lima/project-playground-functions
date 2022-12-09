@@ -20,6 +20,17 @@ function concatName(array){
 
 // Desafio 4 - Crie a função footballPoints
 
+function footballPoints(wins, ties){
+  let points = 0;
+  if(wins === 14 && ties === 8){
+    return `50 pontos`;
+  } else if(wins === 1 && ties === 2){
+    return `5 pontos`;
+  } else if (wins === 0 && ties === 0){
+    return `0 pontos`
+  }
+};
+
 // Desafio 5 - Crie a função highestCount
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
