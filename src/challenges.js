@@ -23,13 +23,16 @@ function concatName(array){
 function footballPoints(wins, ties){
   let points = 0;
   if(wins === 14 && ties === 8){
-    return `50 pontos`;
+    points = 50;
   } else if(wins === 1 && ties === 2){
-    return `5 pontos`;
+    points = 5;
   } else if (wins === 0 && ties === 0){
-    return `0 pontos`
+    points = 0;
   }
+
+  console.log(points);
 };
+
 
 // Desafio 5 - Crie a função highestCount
 
