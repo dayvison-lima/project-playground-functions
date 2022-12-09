@@ -21,16 +21,11 @@ function concatName(array){
 // Desafio 4 - Crie a função footballPoints
 
 function footballPoints(wins, ties){
-  let points = 0;
-  if(wins === 14 && ties === 8){
-    points = 50;
-  } else if(wins === 1 && ties === 2){
-    points = 5;
-  } else if (wins === 0 && ties === 0){
-    points = 0;
-  }
+  let win = wins * 3;
+  let tie = ties;
+  let points = win + tie;
+  return points;
 
-  console.log(points);
 };
 
 
