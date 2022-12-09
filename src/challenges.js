@@ -14,7 +14,7 @@ console.log(splitSentence('foguete'));
 
 function concatName(array){
  let firstItem = array[0];
- let lastItem = array.at(-1)
+ let lastItem = array[array.length - 1];
  return `${lastItem}, ${firstItem}`; 
 };
 
