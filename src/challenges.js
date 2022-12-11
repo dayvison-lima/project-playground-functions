@@ -53,32 +53,25 @@ function footballPoints(wins, ties){
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
-function calcTriangleArea(base, height){
-  const resultadoTriangulo = (base*height)/2;
-  return resultadoTriangulo;
-}
+const calcTriangleArea = (base, height) => (base*height)/2
 
-function calcRectangleArea(base, height){
-  const resultadoRetangulo = (base*height);
-  return resultadoRetangulo;
-}
+const calcRectangleArea = (base, height) => (base*height)
 
-function calcAllAreas(base, height, form){
+const calcAllAreas = (base, height, form) => {
   
-  
-  if(form=== "triângulo"){
-    const valorDaArea = calcTriangleArea(base, height);
-    console.log(`O valor da área do triângulo é de: ${valorDaArea}`);
+  let resultado = '';
+  if(form === "triângulo"){
+   
+    resultado = `O valor da área do triângulo é de: ${(base*height)/2}`;
   } else if(form === "retângulo"){
-    const valorDaArea = calcRectangleArea(base, height);
-    console.log(`O valor da área do retângulo é de: ${valorDaArea}`);
+   
+    resultado = `O valor da área do retângulo é de: ${base*height}`;
   } else{
-    console.log(`Não foi possível fazer o cálculo, insira uma forma geométrica válida`);
+    resultado = `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
   }
+
+  return resultado;
 }
-
-
-
 
 
 // Desafio 7 - Crie a função catAndMouse
