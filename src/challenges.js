@@ -33,31 +33,17 @@ function footballPoints(wins, ties){
 
 
 const highestCount = (array) => {
-
-  
-  let num = {};
-
-  for (let index = 0; index < array.length; index += 1) {
-    let value = array[index];
-    if (num[value] === undefined) {
-      num[value] = 1;
-    } else {
-      num[value] = num[value] + 1;
-    }
+  let count = 0;
+  const max = Math.max(...array);
+  for(let index in array){
+    if(array[index] === max){
+      count = count + 1;
+    } 
   }
-
-  let numTimes= 0;
-  
-
-  for (let prop in num) {
-    if (numTimes < num[prop]) {
-      numTimes = num[prop];
-    }
-  }
-
-  return numTimes;
-
+  return count;
 };
+
+
 
 
 
