@@ -69,8 +69,21 @@ const calcAllAreas = (base, height, form) => {
   return resultado;
 }
 
-
 // Desafio 7 - Crie a função catAndMouse
+
+const catAndMouse = (mouse, cat1, cat2) => {
+  let maisPerto = '';
+  if(cat1 - mouse < cat2 - mouse){
+    maisPerto = `cat1`;
+  } else if(cat2 - mouse < cat1 - mouse){
+    maisPerto = `cat2`;
+  } else if( cat2 - mouse === cat1 - mouse){
+    maisPerto = `os gatos trombam e o rato foge`;
+    }
+    return maisPerto;
+  }
+
+  catAndMouse(0, 3, 2)
 
 // Desafio 8 - Crie a função fizzBuzz
 
