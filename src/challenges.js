@@ -30,26 +30,36 @@ function footballPoints(wins, ties){
 
 // Desafio 5 - Crie a função highestCount
 
-// const arrayteste = [9, 1, 2, 3, 9, 5, 7];
 
-// function highestCount(array){
 
-//   const maiorNum = 0; 
+const highestCount = (array) => {
+
+  
+  let num = {};
+
+  for (let index = 0; index < array.length; index += 1) {
+    let value = array[index];
+    if (num[value] === undefined) {
+      num[value] = 1;
+    } else {
+      num[value] = num[value] + 1;
+    }
+  }
+
+  let numTimes= 0;
   
 
-//   for(index = 0; index < array.length; index += 1){
-    
-//     if(array[index] > maiorNum){
-//       maiorNum = array[index];
-    
-//     } 
-//   }
+  for (let prop in num) {
+    if (numTimes < num[prop]) {
+      numTimes = num[prop];
+    }
+  }
 
-//   return MaiorNum;
+  return numTimes;
 
-// };
+};
 
-// highestCount(arrayteste);
+
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
