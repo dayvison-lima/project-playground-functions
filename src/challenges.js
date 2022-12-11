@@ -77,13 +77,13 @@ const catAndMouse = (mouse, cat1, cat2) => {
     maisPerto = `cat1`;
   } else if(cat2 - mouse < cat1 - mouse){
     maisPerto = `cat2`;
-  } else if( cat2 - mouse === cat1 - mouse){
+  } else{
     maisPerto = `os gatos trombam e o rato foge`;
     }
     return maisPerto;
   }
 
-  catAndMouse(0, 3, 2)
+ 
 
 // Desafio 8 - Crie a função fizzBuzz
 
