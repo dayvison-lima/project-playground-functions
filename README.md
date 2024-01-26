@@ -13,9 +13,9 @@ No seu time de desenvolvimento, você ficou responsável por implementar o códi
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:tryber/sd-029-b-project-playground-functions.git`
+  - Use o comando: `git clone git@github.com:dayvison-lima/project-playground-functions.git`
   - Entre na pasta do repositório que você acabou de clonar:
-    - `cd sd-029-b-project-playground-functions`
+    - `cd project-playground-functions`
 
   2. Instale as dependências
 
